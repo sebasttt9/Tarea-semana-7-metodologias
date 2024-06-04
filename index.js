@@ -1,31 +1,35 @@
-'Use Strict';
-//funcion sin parametros y sin retorno
-function hola(){
-    alert ("Ingresando");
- 
+'use strict';
+//  (1)   Sin parametros, sin valor de retorno
+function darSaludo() {
+    alert("Hola");
 }
-saludo()
+//llamamos a la función
+darSaludo();
 
 
-//funcion con parametros sin valor retorno
-function suma(n1,n2){
-    let result = n1 + n2;
-    alert ("Resultado "+ result);
-    suma(4, 7);
+//  (2)   Con parametros, sin valores de retorno 
+function saludar(nombre) {
+    alert("Hola " + nombre);
 }
-//funcion sin parametros y valor de retorno
-function resta (a, b){
-    return a - b;
-}
-let resultresta = resta (9,6);
-alert ("Resultado "+ resultresta);
 
-//Funcion con parametros sin valor retorno
-function Arearesult (base,altura){
-    let area = base * altura;
-    return area;
+let nombre = "Bienvenido";
+saludar(nombre);
+
+
+//  (3)   Sin parametros, con valor de retorno
+function obtenerNumero() {
+    return -98;
 }
-let BaseA = 6;
+let numero = obtenerNumero();
+alert("El numero obtenido es : " + numero);
+
+
+//  (4)  Con parametros, con valor de retorno
+function sumar(a, b) {
+    return a + b;
+}
+let resultado = sumar(9, 7);
+alert("El resultado de la suma es : " + resultado);
 let AlturaA = 7;
 let result = Arearesult(BaseA,AlturaA );
 alert  ("Area total "+Arearesult)
